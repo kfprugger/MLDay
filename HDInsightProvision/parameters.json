@@ -2,17 +2,20 @@
     "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
-        "clusterName": {
-            "value": "[uniqueString( resourceGroup().id, deployment().name )]"
-        },
-        "clusterLoginUserName": {
-            "value": "azure"
+        "clusterKind": {
+            "value": "hadoop"
         },
         "clusterLoginPassword": {
             "value": "P@ssw0rd12345!"
         },
-        "location": {
-            "value": "eastus2"
+        "clusterLoginUserName": {
+            "value": "azure"
+        },
+        "clusterName": {
+            "value": "[uniqueString( resourceGroup().id, deployment().name )]"
+        },
+        "clusterType": {
+            "value": "hadoop"
         },
         "clusterVersion": {
             "value": "3.6"
@@ -20,14 +23,14 @@
         "clusterWorkerNodeCount": {
             "value": 2
         },
-        "clusterKind": {
-            "value": "hadoop"
-        },
-        "sshUserName": {
-            "value": "sshuser"
+        "location": {
+            "value": "eastus2"
         },
         "sshPassword": {
             "value": "P@ssw0rd12345!"
+        },
+        "sshUserName": {
+            "value": "sshuser"
         }
     }
 }

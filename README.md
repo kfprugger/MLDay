@@ -21,5 +21,6 @@ https://desktop.github.com/
 ### Please execute the following scripts inside your Azure portal using the BASH [Azure Cloud Shell](https://docs.microsoft.com/en-us/azure/cloud-shell/overview)
 ```azurecli
 az 
+```
 <br>
 <b/> Session 2: </b>
