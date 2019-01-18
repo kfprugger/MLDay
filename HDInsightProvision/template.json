@@ -83,7 +83,7 @@
                 "clusterVersion": "3.6",
                 "osType": "Linux",
                 "clusterDefinition": {
-                    "kind": "[parameters('clusterType')]",
+                    "kind": "hadoop",
                     "configurations": {
                         "gateway": {
                             "restAuthCredential.isEnabled": true,
