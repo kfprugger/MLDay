@@ -83,7 +83,7 @@
                 "clusterVersion": "3.6",
                 "osType": "Linux",
                 "clusterDefinition": {
-                    "kind": "hadoop",
+                    "kind": "[parameters('clusterType')]",
                     "configurations": {
                         "gateway": {
                             "restAuthCredential.isEnabled": true,
@@ -131,15 +131,9 @@
                             }
                         }
                     ]
-                },
-                "clusterWorkerNodeCount": {
-                    "type": "int",
-                    "defaultValue": 2,
-                    "metadata": {
-                        "description": "The number of nodes in the HDInsight cluster."
-                    }
                 }
             }
+        }
     ],
     "outputs": {
         "storage": {
@@ -152,3 +146,4 @@
         }
     }
 }
+
