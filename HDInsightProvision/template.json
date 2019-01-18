@@ -9,6 +9,7 @@
             }
         },
         "clusterType": {
+            "type": "string",
             "allowedValues": [
                 "hadoop",
                 "intractivehive",
@@ -18,8 +19,7 @@
             ],
             "metadata": {
                 "description": "The type of the HDInsight cluster to create."
-            },
-            "type": "string"
+            }
         },
         "clusterLoginUserName": {
             "type": "string",
@@ -83,7 +83,7 @@
                 "clusterVersion": "3.6",
                 "osType": "Linux",
                 "clusterDefinition": {
-                    "kind": "[parameters('clusterType')]",
+                    "kind": "hadoop",
                     "configurations": {
                         "gateway": {
                             "restAuthCredential.isEnabled": true,
@@ -121,7 +121,7 @@
                             "name": "workernode",
                             "targetInstanceCount": 2,
                             "hardwareProfile": {
-                                "vmSize": "Standard_D3_v2"
+                                "vmSize": "Standard_A3"
                             },
                             "osProfile": {
                                 "linuxOperatingSystemProfile": {
@@ -131,9 +131,15 @@
                             }
                         }
                     ]
+                },
+                "clusterWorkerNodeCount": {
+                    "type": "int",
+                    "defaultValue": 2,
+                    "metadata": {
+                        "description": "The number of nodes in the HDInsight cluster."
+                    }
                 }
             }
-        }
     ],
     "outputs": {
         "storage": {

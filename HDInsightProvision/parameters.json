@@ -17,9 +17,6 @@
         "clusterType": {
             "value": "hadoop"
         },
-        "clusterVersion": {
-            "value": "3.6"
-        },
         "clusterWorkerNodeCount": {
             "value": 2
         },
