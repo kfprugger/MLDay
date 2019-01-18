@@ -3,13 +3,13 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "clusterName": {
-            "value": "student1"
+            "value": "[uniqueString( resourceGroup().id, deployment().name )]"
         },
         "clusterLoginUserName": {
             "value": "azure"
         },
         "clusterLoginPassword": {
-            "value": null
+            "value": "P@ssw0rd12345!"
         },
         "location": {
             "value": "eastus2"
@@ -21,13 +21,13 @@
             "value": 2
         },
         "clusterKind": {
-            "value": "HADOOP"
+            "value": "hadoop"
         },
         "sshUserName": {
             "value": "sshuser"
         },
         "sshPassword": {
-            "value": null
+            "value": "P@ssw0rd12345!"
         }
     }
 }
