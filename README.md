@@ -19,11 +19,11 @@ https://desktop.github.com/
 
 <b/> Session 1: </b>Introduction to Azure and Azure Fundamentals (install the pre-reqs and install the foundational compute resources)
 ### Please execute the following scripts inside your Azure portal using the BASH [Azure Cloud Shell](https://docs.microsoft.com/en-us/azure/cloud-shell/overview)
-```azurecli
+
 
 ***Tip: Copy and paste these line-by-line
+```azurecli
 
-```
 read -p "Enter Your Student Number: " stunum
 stoacct=ml2019stu$stunum
 stocont=hadooplabs
@@ -34,26 +34,24 @@ curl -o weblogs.csv https://raw.githubusercontent.com/Microsoft/code-challenges/
 
 echo "Your Student Number is" $stunum
 
-```
 
-```azurecli
+
+
 az storage account create --resource-group student$stunum --location eastus --name ml2019stu$stunum --sku Standard_LRS 
 
 az storage container create  --name hadooplabs --account-name $stoacct
-```azurecli
 
-```
+
 stokey=$(az storage account keys list --account-name $stoacct --query [0].value | tr -d '"')
 
 
 
 
 curl -o parameters.json 'https://raw.githubusercontent.com/kfprugger/MLDay/master/HDInsightProvision/parameters.json'
-```
 
-```azurecli
+
 az group deployment create --name HDIdeploy --resource-group $sturg --template-uri "https://raw.githubusercontent.com/kfprugger/MLDay/master/HDInsightProvision/template.json" --parameters 'clusterName=rojo1111' 'clusterType=hadoop' 'clusterLoginUserName=azure' 'sshUserName=azure'
-```azurecli
+
 ```
 <br>
 <b/> Session 2: </b>
