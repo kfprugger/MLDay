@@ -9,10 +9,7 @@
         "clusterLoginUserName": {
             "value": "azure"
         },
-        "clusterName": {
-            "value": "[toLower(resourceGroup().name)]"
-        },
-
+      
         "location": {
             "value": "eastus"
         },
