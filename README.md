@@ -21,13 +21,40 @@ https://desktop.github.com/
 ### Please execute the following scripts inside your Azure portal using the BASH [Azure Cloud Shell](https://docs.microsoft.com/en-us/azure/cloud-shell/overview)
 ```azurecli
 
-Read prompt "What's your student number"
+***Tip: Copy and paste these line-by-line
 
-az storage create $prompt....
+```bash
+read -p "Enter Your Student Number: " stunum
+stoacct=ml2019stu$stunum
+stocont=hadooplabs
+sturg="Student$stunum"
+
+curl -o weblogs.csv https://raw.githubusercontent.com/Microsoft/code-challenges/master/Labs/Azure%20HDInsight/HiveLab/Data/hadooplabs/Lab1/weblogs.csv
+
+
+echo "Your Student Number is" $stunum
+
+```bash 
+
+```azurecli
+az storage account create --resource-group student$stunum --location eastus --name ml2019stu$stunum --sku Standard_LRS 
+
+az storage container create  --name hadooplabs --account-name $stoacct
+```azurecli
+
+```bash
+stokey=$(az storage account keys list --account-name $stoacct --query [0].value | tr -d '"')
+
+
+
 
 curl -o parameters.json 'https://raw.githubusercontent.com/kfprugger/MLDay/master/HDInsightProvision/parameters.json'
+```bash
 
-az group deployment create --name HDIdeploy --resource-group LabPrototyping --template-uri "https://raw.githubusercontent.com/kfprugger/MLDay/master/HDInsightProvision/template.json" --parameters @parameters.json
+```azurecli
+az group deployment create --name HDIdeploy --resource-group $sturg --template-uri "https://raw.githubusercontent.com/kfprugger/MLDay/master/HDInsightProvision/template.json" --parameters 'clusterName=rojo1111' 'clusterType=hadoop' 'clusterLoginUserName=azure' 'sshUserName=azure'
+```azurecli
+
 ```
 <br>
 <b/> Session 2: </b>
