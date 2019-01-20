@@ -23,7 +23,7 @@ https://desktop.github.com/
 
 ***Tip: Copy and paste these line-by-line
 
-```bash
+```
 read -p "Enter Your Student Number: " stunum
 stoacct=ml2019stu$stunum
 stocont=hadooplabs
@@ -34,7 +34,7 @@ curl -o weblogs.csv https://raw.githubusercontent.com/Microsoft/code-challenges/
 
 echo "Your Student Number is" $stunum
 
-```bash 
+```
 
 ```azurecli
 az storage account create --resource-group student$stunum --location eastus --name ml2019stu$stunum --sku Standard_LRS 
@@ -42,19 +42,18 @@ az storage account create --resource-group student$stunum --location eastus --na
 az storage container create  --name hadooplabs --account-name $stoacct
 ```azurecli
 
-```bash
+```
 stokey=$(az storage account keys list --account-name $stoacct --query [0].value | tr -d '"')
 
 
 
 
 curl -o parameters.json 'https://raw.githubusercontent.com/kfprugger/MLDay/master/HDInsightProvision/parameters.json'
-```bash
+```
 
 ```azurecli
 az group deployment create --name HDIdeploy --resource-group $sturg --template-uri "https://raw.githubusercontent.com/kfprugger/MLDay/master/HDInsightProvision/template.json" --parameters 'clusterName=rojo1111' 'clusterType=hadoop' 'clusterLoginUserName=azure' 'sshUserName=azure'
 ```azurecli
-
 ```
 <br>
 <b/> Session 2: </b>
