@@ -45,6 +45,9 @@
         "defaultStorageAccount": {
             "name": "[uniqueString(resourceGroup().id)]",
             "type": "Standard_LRS"
+        },
+        "clusterName": {
+            "value": "[toLower(resourceGroup().id)]"
         }
     },
     "resources": [
@@ -61,7 +64,7 @@
         },
         {
             "type": "Microsoft.HDInsight/clusters",
-            "name": "[parameters('clusterName')]",
+            "name": "[variables('clusterName').value]",
             "location": "[parameters('location')]",
             "apiVersion": "2015-03-01-preview",
             "dependsOn": [

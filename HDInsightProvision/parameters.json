@@ -10,11 +10,11 @@
             "value": "azure"
         },
         "clusterName": {
-            "value": "[uniqueString(resourceGroup().id)]"
+            "value": "[toLower(resourceGroup().name)]"
         },
 
         "location": {
-            "value": "eastus2"
+            "value": "eastus"
         },
         "sshPassword": {
             "value": "P@ssw0rd12345!"
