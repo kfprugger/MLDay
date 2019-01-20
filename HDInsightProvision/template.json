@@ -43,7 +43,7 @@
     },
     "variables": {
         "defaultStorageAccount": {
-            "name": "[concat(toLower(uniqueString(resourceGroup().name)))]",
+            "name": "[toLower(uniqueString(resourceGroup().id))]",
             "type": "Standard_LRS"
         }
     },
