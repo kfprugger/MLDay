@@ -10,7 +10,7 @@
             "value": "azure"
         },
         "clusterName": {
-            "value": "[toLower(uniqueString(resourceGroup().id))]"
+            "value": "[uniqueString(resourceGroup().id)]"
         },
 
         "location": {
