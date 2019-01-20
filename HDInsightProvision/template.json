@@ -8,7 +8,19 @@
                 "description": "The name of the HDInsight cluster to create."
             }
         },
-        
+        "clusterType": {
+            "type": "string",
+            "allowedValues": [
+                "hadoop",
+                "intractivehive",
+                "hbase",
+                "storm",
+                "spark"
+            ],
+            "metadata": {
+                "description": "The type of the HDInsight cluster to create."
+            }
+        },
         "clusterLoginUserName": {
             "type": "string",
             "metadata": {
@@ -71,7 +83,7 @@
                 "clusterVersion": "3.6",
                 "osType": "Linux",
                 "clusterDefinition": {
-                    "kind": "hadoop",
+                    "kind": "[parameters('clusterType')]",
                     "configurations": {
                         "gateway": {
                             "restAuthCredential.isEnabled": true,
@@ -94,9 +106,9 @@
                     "roles": [
                         {
                             "name": "headnode",
-                            "targetInstanceCount": 1,
+                            "targetInstanceCount": 2,
                             "hardwareProfile": {
-                                "vmSize": "Standard_A3"
+                                "vmSize": "Standard_D3_v2"
                             },
                             "osProfile": {
                                 "linuxOperatingSystemProfile": {
@@ -109,7 +121,7 @@
                             "name": "workernode",
                             "targetInstanceCount": 2,
                             "hardwareProfile": {
-                                "vmSize": "Standard_A3"
+                                "vmSize": "Standard_D3_v2"
                             },
                             "osProfile": {
                                 "linuxOperatingSystemProfile": {
@@ -134,4 +146,3 @@
         }
     }
 }
-
