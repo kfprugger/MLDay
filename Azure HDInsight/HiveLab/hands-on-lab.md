@@ -30,7 +30,7 @@ Learn the basics of querying with Hive
 
 ### Launch Hive Views in Ambari portal
 #### **Replace <FILL_ME_IN> with the password provided during the pre-req creation.** 
--   [https://&lt;Student\_num#&gt;.azurehdinsight.net\#/main/view/HIVE/auto\_hive20\_instance](https://pranavsparkbuildlab.azurehdinsight.net/#/main/view/HIVE/auto_hive20_instance)
+-   [https://ml2019stu&lt;student\_num#&gt;.azurehdinsight.net\/#/main/view/HIVE/auto\_hive20\_instance](https://ml2019stu40.azurehdinsight.net/#/main/view/HIVE/auto\_hive20\_instance)
 
 -   Username: **azure** 
 
@@ -161,7 +161,8 @@ The table description is given below
 
 ### Launch Hive Views in Ambari portal
 #### **Replace <FILL_ME_IN> with the password provided during the pre-req creation.** 
--   [https://&lt;Student\_num#&gt;.azurehdinsight.net/#/main/view/HIVE/auto\_hive20\_instance](https://pranavsparkbuildlab.azurehdinsight.net/#/main/view/HIVE/auto_hive20_instance)
+-   [https://ml2019stu&lt;student\_num#&gt;.azurehdinsight.net\/#/main/view/HIVE/auto\_hive20\_instance](https://ml2019stu40.azurehdinsight.net/#/main/view/HIVE/auto_hive20_instance)
+    -   Be patient. The first time you hit this link, services are checked and internal processes are "warmed up" for the first time
 
 -   Username: **azure**
 
