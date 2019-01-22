@@ -50,3 +50,19 @@ By the time you leave the workshop, you should know the following:
 
 - [Azure Databricks + TensorFlow Hands-On Lab](https://github.com/kfprugger/MLDay/blob/master/DatabricksML/HOL%20step-by%20step%20-%20Cognitive%20services%20and%20deep%20learning.md#exercise-3-create-and-deploy-a-tensorflow-model)
   - Exercise 3 & 4 (if you have time)
+
+# Follow-Up
+Thanks for spending time with Microsoft today. We're ALWAYS thrilled to come and speak about our technology and we'd love to hear back from you! Please see below for our contact information and survey.
+## ML Day Survey
+### **[ML Day Survey](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR3vmVKFttl1JjVF3shHsVeNUMDVCMUlOWUFURDE0UllPQ1dQNzVHWVpENS4u)**
+## Joey Brakefield, Cloud Solutions Architect (Southeast Region -- Atlanta, GA)
+- Email:    joey.brakefield@microsoft.com 
+- Twitter:  http://twitter.com/kfprugger
+- LinkedIn: https://www.linkedin.com/in/joeybrakefield/ 
+- GitHub:   https://github.com/kfprugger
+## Shimail Gillani, Cloud Solutions Architect (South Central Region -- Dallax, TX)
+- Email: shimail.gillani@microsoft.com
+- Twitter: https://twitter.com/chefgillani
+- LinkedIn: https://www.linkedin.com/in/chefgillani/
+- GitHub: https://github.com/ChefGillani
+
