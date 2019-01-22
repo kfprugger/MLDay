@@ -112,9 +112,9 @@
                     "roles": [
                         {
                             "name": "headnode",
-                            "targetInstanceCount": 1,
+                            "targetInstanceCount": 2,
                             "hardwareProfile": {
-                                "vmSize": "Standard_A3"
+                                "vmSize": "Standard_D3_v2"
                             },
                             "osProfile": {
                                 "linuxOperatingSystemProfile": {
@@ -125,9 +125,9 @@
                         },
                         {
                             "name": "workernode",
-                            "targetInstanceCount": 1,
+                            "targetInstanceCount": 2,
                             "hardwareProfile": {
-                                "vmSize": "Standard_A3"
+                                "vmSize": "Standard_D3_v2"
                             },
                             "osProfile": {
                                 "linuxOperatingSystemProfile": {

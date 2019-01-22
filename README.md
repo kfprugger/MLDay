@@ -5,7 +5,7 @@ The aim of this all-day workshop is to familiarize you with the Microsoft Azure 
 By the time you leave the workshop, you should know the following:
 - How to navigate Azure and how to spin up new resources to do your work
 - Know different data collection & sanitation techniques and technologies
-- Have a feel for implemenation of machine learning platforms that will facilitate your research aspirations
+- Have a feel for implementation of machine learning platforms that will facilitate your research aspirations
 - How to have fun working with scaled, (almost) unlimited cloud resources
 
 ## Getting Started 
@@ -87,10 +87,10 @@ az group deployment create --name HDIdeploy --resource-group $sturg --template-u
 - [Databricks Setup and Lab 1 Hands-On Lab](https://github.com/kfprugger/MLDay/blob/master/DatabricksML/HOL%20step-by%20step%20-%20Cognitive%20services%20and%20deep%20learning.md#exercise-1-setup-azure-databricks-workspace)
   - Exercise 1 and Exercise 2
 
-### Session 6: Cognitive Services (pre-trained ML), Data Lakes and Deep Nueral Networks
+### Session 6: Cognitive Services (pre-trained ML), Data Lakes and Deep Neural Networks
 - **1445-1600:** In Exercise 3, we'll use the opensource TensorFlow ML library to analyze the data even further by using deploying a simple Deep Neural Network which will classify claims data.
   
   If we have time, Exercise 4 leverages pre-built, compiled and inexpensive public Azure services to analyze the text with Microsoft's Text Analytics API which is part of the Cognitive Services toolkit. These services can be leverage in ANY code, anywhere securely so long as the code has access to the internet.
 
-- [Azure Databrics + TensorFlow Hands-On Lab](https://github.com/kfprugger/MLDay/blob/master/DatabricksML/HOL%20step-by%20step%20-%20Cognitive%20services%20and%20deep%20learning.md#exercise-3-create-and-deploy-a-tensorflow-model)
+- [Azure Databricks + TensorFlow Hands-On Lab](https://github.com/kfprugger/MLDay/blob/master/DatabricksML/HOL%20step-by%20step%20-%20Cognitive%20services%20and%20deep%20learning.md#exercise-3-create-and-deploy-a-tensorflow-model)
   - Exercise 3 & 4 (if you have time)
