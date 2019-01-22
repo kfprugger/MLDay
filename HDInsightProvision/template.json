@@ -39,16 +39,16 @@
                 "description": "These credentials can be used to remotely access the cluster."
             }
         },
-        "sshPassword": {
-            "type": "securestring",
-            "metadata": {
-                "description": "The password must be at least 10 characters in length and must contain at least one digit, one non-alphanumeric character, and one upper or lower case letter."
-            }
-        },
         "storageAccount": {
             "type": "string",
             "metadata": {
                 "description": "Storage Account from the script above. Should be held in BASH variable $stoacct."
+            }
+        },
+        "sshPassword": {
+            "type": "securestring",
+            "metadata": {
+                "description": "The password must be at least 10 characters in length and must contain at least one digit, one non-alphanumeric character, and one upper or lower case letter."
             }
         },
         "location": {
@@ -68,7 +68,7 @@
     "resources": [
         {
             "type": "Microsoft.Storage/storageAccounts",
-            "name": "[parameters('storageAccount')]",
+            "name": "[variables('defaultStorageAccount').name]",
             "location": "[parameters('location')]",
             "apiVersion": "2016-01-01",
             "sku": {
@@ -83,7 +83,7 @@
             "location": "[parameters('location')]",
             "apiVersion": "2015-03-01-preview",
             "dependsOn": [
-                "[concat('Microsoft.Storage/storageAccounts/',parameters('storageAccount').name)]"
+                "[concat('Microsoft.Storage/storageAccounts/',variables('defaultStorageAccount').name)]"
             ],
             "properties": {
                 "clusterVersion": "3.6",
@@ -101,10 +101,10 @@
                 "storageProfile": {
                     "storageaccounts": [
                         {
-                            "name": "[replace(replace(concat(reference(concat('Microsoft.Storage/storageAccounts/', parameters('storageAccount'), '2016-01-01').primaryEndpoints.blob),'https:',''),'/','')]",
+                            "name": "[replace(replace(concat(reference(concat('Microsoft.Storage/storageAccounts/', variables('defaultStorageAccount').name), '2016-01-01').primaryEndpoints.blob),'https:',''),'/','')]",
                             "isDefault": true,
                             "container": "[parameters('clusterName')]",
-                            "key": "[listKeys(resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccount'), '2016-01-01').keys[0].value]"
+                            "key": "[listKeys(resourceId('Microsoft.Storage/storageAccounts', variables('defaultStorageAccount').name), '2016-01-01').keys[0].value]"
                         }
                     ]
                 },
@@ -144,7 +144,7 @@
     "outputs": {
         "storage": {
             "type": "object",
-            "value": "[reference(resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccount'))]"
+            "value": "[reference(resourceId('Microsoft.Storage/storageAccounts', variables('defaultStorageAccount').name))]"
         },
         "cluster": {
             "type": "object",
