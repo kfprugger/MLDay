@@ -61,7 +61,7 @@
     },
     "variables": {
         "defaultStorageAccount": {
-            "name": "[parameters('storageAccount').name]",
+            "name": "[parameters('storageAccount')]",
             "type": "Standard_LRS"
         }
     },
