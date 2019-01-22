@@ -59,16 +59,11 @@
             }
         }
     },
-    "variables": {
-        "defaultStorageAccount": {
-            "name": "[parameters('storageAccount')]",
-            "type": "Standard_LRS"
-        }
-    },
+    "variables": {},
     "resources": [
         {
             "type": "Microsoft.Storage/storageAccounts",
-            "name": "[variables('defaultStorageAccount').name]",
+            "name": "[parameters('storageAccount')]",
             "location": "[parameters('location')]",
             "apiVersion": "2016-01-01",
             "sku": {
