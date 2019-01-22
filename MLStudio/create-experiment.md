@@ -70,8 +70,7 @@ In this machine learning tutorial, you'll follow five basic steps to build an ex
 [Step 4: Choose and apply a learning algorithm]: #step-4-choose-and-apply-a-learning-algorithm
 [Step 5: Predict new automobile prices]: #step-5-predict-new-automobile-prices
 
-> [!TIP] 
-> You can find a working copy of the following experiment in the [Azure AI Gallery](https://gallery.cortanaintelligence.com). Go to **[Your first data science experiment - Automobile price prediction](https://gallery.cortanaintelligence.com/Experiment/Your-first-data-science-experiment-Automobile-price-prediction-1)** and click **Open in Studio** to download a copy of the experiment into your Machine Learning Studio workspace.
+
 
 
 ## Step 1: Get data
@@ -309,6 +308,12 @@ The final experiment should look something like this:
 ![The final experiment][complete-linear-regression-experiment]
 <br/>
 ***The final experiment***
+
+
+> [!TIP] 
+> You can find a working copy of the following experiment in the [Azure AI Gallery](https://gallery.cortanaintelligence.com). Go to **[Your first data science experiment - Automobile price prediction](https://gallery.cortanaintelligence.com/Experiment/Your-first-data-science-experiment-Automobile-price-prediction-1)** and click **Open in Studio** to download a copy of the experiment into your Machine Learning Studio workspace.
+
+
 
 ## Next steps
 
