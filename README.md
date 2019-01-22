@@ -13,10 +13,10 @@ By the time you leave the workshop, you should know the following:
 
 
 
-## ** **IMPORTANT: Navigate over to the [Pre-Reqs for ML Day](https://github.com/kfprugger/MLDay/prereqs.md) before attempting the labs**  **
+## ** **IMPORTANT: Navigate over to the [Pre-Reqs for ML Day](https://github.com/kfprugger/MLDay/blob/master/prereqs.md) before attempting the labs**  **
 
 
-# Now let's take a look at the agenda for the day
+# Workshop Agenda
 
 ### Session 1: Introduction to Azure and Azure Fundamentals 
 
