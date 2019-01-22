@@ -60,7 +60,7 @@ Thanks for spending time with Microsoft today. We're ALWAYS thrilled to come and
 - Twitter:  http://twitter.com/kfprugger
 - LinkedIn: https://www.linkedin.com/in/joeybrakefield/ 
 - GitHub:   https://github.com/kfprugger
-## Shimail Gillani, Cloud Solutions Architect (South Central Region -- Dallax, TX)
+## Shimail Gillani, Cloud Solutions Architect (South Central Region -- Dallas, TX)
 - Email: shimail.gillani@microsoft.com
 - Twitter: https://twitter.com/chefgillani
 - LinkedIn: https://www.linkedin.com/in/chefgillani/
