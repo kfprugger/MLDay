@@ -59,7 +59,12 @@
             }
         }
     },
-    "variables": {},
+    "variables": {
+        "defaultStorageAccount": {
+            "name": "[parameters('storageAccount')]",
+            "type": "Standard_LRS"
+        }
+    },
     "resources": [
         {
             "type": "Microsoft.Storage/storageAccounts",
@@ -78,7 +83,7 @@
             "location": "[parameters('location')]",
             "apiVersion": "2015-03-01-preview",
             "dependsOn": [
-                "[concat('Microsoft.Storage/storageAccounts/',variables('defaultStorageAccount').name)]"
+                "[concat('Microsoft.Storage/storageAccounts/',parameters('storageAccount').name)]"
             ],
             "properties": {
                 "clusterVersion": "3.6",
@@ -96,10 +101,10 @@
                 "storageProfile": {
                     "storageaccounts": [
                         {
-                            "name": "[replace(replace(concat(reference(concat('Microsoft.Storage/storageAccounts/', variables('defaultStorageAccount').name), '2016-01-01').primaryEndpoints.blob),'https:',''),'/','')]",
+                            "name": "[replace(replace(concat(reference(concat('Microsoft.Storage/storageAccounts/', parameters('storageAccount'), '2016-01-01').primaryEndpoints.blob),'https:',''),'/','')]",
                             "isDefault": true,
                             "container": "[parameters('clusterName')]",
-                            "key": "[listKeys(resourceId('Microsoft.Storage/storageAccounts', variables('defaultStorageAccount').name), '2016-01-01').keys[0].value]"
+                            "key": "[listKeys(resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccount'), '2016-01-01').keys[0].value]"
                         }
                     ]
                 },
@@ -139,7 +144,7 @@
     "outputs": {
         "storage": {
             "type": "object",
-            "value": "[reference(resourceId('Microsoft.Storage/storageAccounts', variables('defaultStorageAccount').name))]"
+            "value": "[reference(resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccount'))]"
         },
         "cluster": {
             "type": "object",
