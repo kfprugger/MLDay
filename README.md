@@ -48,12 +48,14 @@ az storage account create --resource-group $sturg --location eastus --name $stoa
 ```
 ```
 az storage container create  --name hadooplabs --account-name $stoacct
+az storage container create  --name $stoacct --account-name $stoacct
+
 ```
 ```
 stokey=$(az storage account keys list --account-name $stoacct --query [0].value | tr -d '"')
 ```
 ```
-azcopy --source weblogs.csv --destination https://$stoacct.blob.core.windows.net/hadooplabs/Lab1/weblogs.csv --dest-key $stokey
+azcopy --source weblogs.csv --destination https://$stoacct.blob.core.windows.net/$stoacct/hadooplabs/Lab1/weblogs.csv --dest-key $stokey
 ```
 ```
 az group deployment create --name HDIdeploy --resource-group $sturg --template-uri "https://raw.githubusercontent.com/kfprugger/MLDay/master/HDInsightProvision/template.json" --parameters "clusterName=ml2019stu$stunum" 'clusterType=hadoop' 'clusterLoginUserName=azure' 'sshUserName=azure' "storageAccount=$stoacct" 
