@@ -30,7 +30,7 @@ https://desktop.github.com/
 
 
 ### Please execute the following scripts inside your Azure portal using the BASH [Azure Cloud Shell](https://docs.microsoft.com/en-us/azure/cloud-shell/overview)
-
+<img src="./media/OpenCloudShell.gif">
 
 ***Tip: Copy and paste these blocks of code together
 ```azurecli
