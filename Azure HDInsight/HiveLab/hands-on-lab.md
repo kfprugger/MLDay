@@ -288,7 +288,7 @@ CREATE TABLE HDILABDB.customerswhobrowsedxbook ROW FORMAT DELIMITED
 FIELDS TERMINATED by '\1' lines TERMINATED by '\n'
 
 STORED AS TEXTFILE LOCATION
-'wasb:///hadooplabs/Lab1/customerswhobrowsedxbook'
+'wasb:///hadooplabs/Lab1/weblogs.csv'
 
 AS
 

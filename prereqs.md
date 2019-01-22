@@ -7,7 +7,7 @@ These steps will get your started with a fresh start. If at all possible, please
 ## Please execute the following scripts inside your Azure portal using the BASH [Azure Cloud Shell](https://docs.microsoft.com/en-us/azure/cloud-shell/overview)
 <img src="./media/OpenCloudShell.gif">
 
-## **Tip: Copy and paste these blocks of code together**
+## **Tip: Copy and paste these blocks of code together inside the Azure Cloud Shell (see above graphic)**
 ```azurecli
 read -p "Enter Your Student Number: " stunum # This is your Resource Group Number listed at portal.azure.com --> Resource Groups link
 ```
