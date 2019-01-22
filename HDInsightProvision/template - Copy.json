@@ -45,12 +45,6 @@
                 "description": "The password must be at least 10 characters in length and must contain at least one digit, one non-alphanumeric character, and one upper or lower case letter."
             }
         },
-        "storageAccount": {
-            "type": "string",
-            "metadata": {
-                "description": "Storage Account from the script above. Should be held in BASH variable $stoacct."
-            }
-        },
         "location": {
             "type": "string",
             "defaultValue": "[resourceGroup().location]",
@@ -61,7 +55,7 @@
     },
     "variables": {
         "defaultStorageAccount": {
-            "name": "[parameters('storageAccount'.name)]",
+            "name": "[uniqueString(resourceGroup().id)]",
             "type": "Standard_LRS"
         }
     },
