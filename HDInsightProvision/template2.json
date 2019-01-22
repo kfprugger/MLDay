@@ -39,6 +39,12 @@
                 "description": "These credentials can be used to remotely access the cluster."
             }
         },
+        "storageAccount": {
+            "type": "string",
+            "metadata": {
+                "description": "Storage Account from the script above. Should be held in BASH variable $stoacct."
+            }
+        },
         "sshPassword": {
             "type": "securestring",
             "metadata": {
@@ -55,7 +61,7 @@
     },
     "variables": {
         "defaultStorageAccount": {
-            "name": "[uniqueString(resourceGroup().id)]",
+            "name": "[parameters('storageAccount')]",
             "type": "Standard_LRS"
         }
     },
