@@ -175,17 +175,17 @@ The notebook you will run depends on certain Python libraries like nltk and gens
 
     ![The list of Interactive Clusters.](images/Hands-onlabstep-bystep-CognitiveServicesanddeeplearningimages/media/image3-5.png "Interactive Clusters")
 
-3. Select the Libraries link and then select Attach New. 
+3. Select the Libraries link and then select Install New. 
 
     ![The Libraries tab showing the Attache New button.](images/Hands-onlabstep-bystep-CognitiveServicesanddeeplearningimages/media/image3-6.png "Attach New")
 
 >**Note**: There are interface updates being deployed, if you do not see the Attach New button, instead go to the Azure Databricks menu option in your Workspace (the very top option on the left) and select Import Library. Then select a source of **Upload Python Egg or PyPi** and then provide the Package name specified in the following steps in the PyPi Name text box. Then in the Status on running clusters list, check the checkbox Attach that is listed to the left of your cluster's name to install the library on your cluster. When successful the Status should read `Attached`.
 
-4. In the Library Source, select **PyPi** and in the Package text box type `nltk` and select Create.
+4. In the Library Source, select **PyPi** and in the Package text box type `nltk` and select Install.
 
     ![The Attach Library dialog showing PyPi as the source and nltk as the package.](images/Hands-onlabstep-bystep-CognitiveServicesanddeeplearningimages/media/image3-6.png "Attach Library")
 
-5. An entry for nltk will appear in the list with a status of installing followed by installed. Select **Attach New** again. As before, select PyPi but this time for package specify `gensim`.
+5. An entry for nltk will appear in the list with a status of installing followed by installed. Select **Install New** again. As before, select PyPi but this time for package specify `gensim`.
 
 ### Task 2: Read thru and execute the Summarization notebook
 
