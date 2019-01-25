@@ -26,6 +26,8 @@ By the time you leave the workshop, you should know the following:
 - **0930-1030:** We will start our first lab with looking at methods on how to collect large data sets for analysis. We'll start with an IoT simulator to simulate large data sets coming into your Azure subscription. In the following sessions, we'll learn how to sanitize and then analyze these large amounts of data
 
 - [IoT Hand-On Lab](https://docs.microsoft.com/en-us/learn/modules/manage-iot-devices/)
+- NOTE: When you get to the prompt that says *Activate Sandbox*, you may skip that as you already have a subscription and resource group provisioned. 
+- NOTE: Only one Free Tier is allowed per subscription. Use "S1" when prompted for the tier.
 
 ### Session 3: Azure Machine Learning Studio Lab and Data Sanitation
 - **1045-1145:** Our second lab will analyze and sanitize a large amount of data similar to what we generated in Lab 1. Our objective is to visualize this large dataset, sanitize it and then infer predictions based on the previously collected data using a ML algorithm.
