@@ -100,7 +100,7 @@ In this exercise, you will setup your Azure Databricks account and Workspace.
 
     b.  Subscription: choose your Azure subscription. 
 
-    c. Resource roup: choose Create new and then specify the name `mcwailab`.
+    c. Resource roup: choose Select Existing new and then specify the name `student<#>`.
 
     d. Location: choose a location near you.
 
