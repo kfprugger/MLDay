@@ -34,7 +34,7 @@ By the time you leave the workshop, you should know the following:
 
 - [Azure ML Studio Hands-On Lab](https://github.com/kfprugger/MLDay/blob/master/MLStudio/create-experiment.md#open-machine-learning-studio)
 
-### Session 4: HDInsight (Hadoop Made Easy)
+### Session 4: HDInsight (Hadoop Made Easy) _We Diddn't get around to this session. Feel free to execute on your own!_
 - **1230-1330:** Our third lab creates a HIVE table in Hadoop, one of the most prominent open-source big data & analytics engine, and demonstrates how to manipulate large amounts of data -- in this case weblogs -- and make sense of it with minimal effort
 
 - [HDInsight Hands-On Lab](https://github.com/kfprugger/MLDay/blob/master/Azure%20HDInsight/HiveLab/hands-on-lab.md)
@@ -55,8 +55,9 @@ By the time you leave the workshop, you should know the following:
 
 # Follow-Up
 Thanks for spending time with Microsoft today. We're ALWAYS thrilled to come and speak about our technology and we'd love to hear back from you! Please see below for our contact information and survey.
-## ML Day Survey
-### **[ML Day Survey](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR3vmVKFttl1JjVF3shHsVeNUMDVCMUlOWUFURDE0UllPQ1dQNzVHWVpENS4u)**
+# ML Day Survey
+## **[ML Day Survey](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR3vmVKFttl1JjVF3shHsVeNUMDVCMUlOWUFURDE0UllPQ1dQNzVHWVpENS4u)**
+# Microsoft Contact
 ## Joey Brakefield, Cloud Solutions Architect (Southeast Region -- Atlanta, GA)
 - Email:    joey.brakefield@microsoft.com 
 - Twitter:  http://twitter.com/kfprugger
@@ -72,3 +73,13 @@ Thanks for spending time with Microsoft today. We're ALWAYS thrilled to come and
 ## Follow Up Links
 - [Azure Free $200 credit](https://azure.microsoft.com/en-us/offers/ms-azr-0044p/)
 - [Azure Internships and Programs](https://careers.microsoft.com/us/en/ur-lp-united-states)
+
+## Learning Links
+- [Azure Learning Paths](https://docs.microsoft.com/en-us/learn/browse/?products=azure%2Cvs-code)
+- [Microsoft Docs - Full Documenation and Tutorials for Each Azure Service](https://docs.microsoft.com/en-us/azure/#pivot=products&panel=all)
+- [Free Pluralsight Learning Provided by Microsoft](https://www.pluralsight.com/partners/microsoft/azure?aid=7010a000001xDURAA2)
+- [Cloud Architecture and API Overview in Azure](https://channel9.msdn.com/shows/Azure-Friday/Learning-Azure-Part-2-Architecture-and-interactive-APIs-for-NET-and-REST-APIs?ocid=AID754288&wt.mc_id=CFID0314)
+- [GitHub Quickstart Templates to Test Out New Tech!](https://github.com/Azure/azure-quickstart-templates)
+- [Azure Governance Links - For IT Admins in Azure]()
+
+### [How to Price Azure?]{https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fazure.microsoft.com%2Fen-us%2Fpricing%2Fcalculator%2F&data=02%7C01%7CJoey.Brakefield%40microsoft.com%7Cc62af280039043454c7f08d67a3c8714%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636830797727888476&sdata=7t3jEmZiTYSsKtUfXQpYTXJEDlyqpynpLjjBK2WHb4g%3D&reserved=0}
