@@ -26,27 +26,29 @@ Microsoft and the trademarks listed at <https://www.microsoft.com/en-us/legal/in
 
 ## Contents
 
-- [Abstract and learning objectives](#abstract-and-learning-objectives)
-- [Overview](#overview)
-- [Solution architecture](#solution-architecture)
-- [Requirements](#requirements)
-- [Exercise 1: Setup Azure Databricks Workspace](#exercise-1-setup-azure-databricks-workspace)
-  - [Task 1: Provision Azure Databricks service](#task-1-provision-azure-databricks-service)
-  - [Task 2: Upload the databricks notebook archive](#task-2-upload-the-databricks-notebook-archive)
-  - [Task 3: Provision a cluster](#task-3-provision-a-cluster)
-- [Exercise 2: Create and Deploy an Unsupervised Model](#exercise-2-create-and-deploy-an-unsupervised-model)
-  - [Task 1: Install libraries](#task-1-install-libraries)
-  - [Task 2: Read thru and execute the Summarization notebook](#task-2-read-thru-and-execute-the-summarization-notebook)
-  - [Task 3: Provision the Azure Machine Learning Workspace and Create the Summarization service](#task-3-provision-the-azure-machine-learning-workspace-and-create-the-summarization-service)
-- [Exercise 3: Create and Deploy a TensorFlow Model](#exercise-3-create-and-deploy-a-tensorflow-model)
-  - [Task 1: Create a simple TensorFlow based model](#task-1-create-a-simple-tensorflow-based-model)
-  - [Task 2: Deploy the TensorFlow model](#task-2-deploy-the-tensorflow-model)
-- [Exercise 4: Completing the solution](#exercise-4-completing-the-solution)
-  - [Task 1: Deploy the Computer Vision API](#task-1-deploy-the-computer-vision-api)
-  - [Task 2: Deploy the Text Analytics API](#task-2-deploy-the-text-analytics-api)
-  - [Task 3: Completing the solution](#task-3-completing-the-solution)
-- [After the hands-on lab](#after-the-hands-on-lab)
-  - [Task 1: Clean up lab resources](#task-1-clean-up-lab-resources)
+- [Cognitive services and deep learning hands-on lab step-by-step](#cognitive-services-and-deep-learning-hands-on-lab-step-by-step)
+  - [Contents](#contents)
+  - [Abstract and learning objectives](#abstract-and-learning-objectives)
+  - [Overview](#overview)
+  - [Solution architecture](#solution-architecture)
+  - [Requirements](#requirements)
+  - [Exercise 1: Setup Azure Databricks Workspace](#exercise-1-setup-azure-databricks-workspace)
+    - [Task 1: Provision Azure Databricks service](#task-1-provision-azure-databricks-service)
+    - [Task 2: Upload the Databricks notebook archive](#task-2-upload-the-databricks-notebook-archive)
+    - [Task 3: Provision a cluster](#task-3-provision-a-cluster)
+  - [Exercise 2: Create and Deploy an Unsupervised Model](#exercise-2-create-and-deploy-an-unsupervised-model)
+    - [Task 1: Install libraries](#task-1-install-libraries)
+    - [Task 2: Read thru and execute the Summarization notebook](#task-2-read-thru-and-execute-the-summarization-notebook)
+    - [Task 3: Provision the Azure Machine Learning Workspace and Create the Summarization service](#task-3-provision-the-azure-machine-learning-workspace-and-create-the-summarization-service)
+  - [Exercise 3: Create and Deploy a TensorFlow Model](#exercise-3-create-and-deploy-a-tensorflow-model)
+    - [Task 1: Create a simple TensorFlow based model](#task-1-create-a-simple-tensorflow-based-model)
+    - [Task 2: Deploy the TensorFlow model](#task-2-deploy-the-tensorflow-model)
+  - [Exercise 4: Completing the solution](#exercise-4-completing-the-solution)
+    - [Task 1: Deploy the Computer Vision API](#task-1-deploy-the-computer-vision-api)
+    - [Task 2: Deploy the Text Analytics API](#task-2-deploy-the-text-analytics-api)
+    - [Task 3: Completing the solution](#task-3-completing-the-solution)
+  - [After the hands-on lab](#after-the-hands-on-lab)
+    - [Task 1: Clean up lab resources](#task-1-clean-up-lab-resources)
 
 ## Abstract and learning objectives
 
@@ -199,6 +201,7 @@ The notebook you will run depends on certain Python libraries like nltk and gens
 1. Within the Workspace, select the Workspace item in the menu and navigate to the folder where you uploaded the Databricks Archive (which should be [your-name/AI-lab]), and select the notebook called `02 Deploy Summarizer Web Service`. This will open the notebook so you can read and execute the code it contains.
 
 2. Read the instructions at the top of the notebook, and execute the cells as instructed. Remember you can use `SHIFT + ENTER` to execute the currently selected cell, and if you do not have a cluster attached, you will be prompted to attach to the cluster you recently deployed. **Note that you will be directed to attach the `azureml-sdk[databricks]` library in the notebook using the same procedure you followed in Task 1.**
+    ![The Attach Library dialog showing PyPi as the source and azureml-sdk as the package.](images/Hands-onlabstep-bystep-CognitiveServicesanddeeplearningimages/media/azureml-sdk.png "Attach Library")
 
 
 ## Exercise 3: Create and Deploy a TensorFlow Model
