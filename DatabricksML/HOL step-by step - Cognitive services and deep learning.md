@@ -201,7 +201,7 @@ The notebook you will run depends on certain Python libraries like nltk and gens
 1. Within the Workspace, select the Workspace item in the menu and navigate to the folder where you uploaded the Databricks Archive (which should be [your-name/AI-lab]), and select the notebook called `02 Deploy Summarizer Web Service`. This will open the notebook so you can read and execute the code it contains.
 
 2. Read the instructions at the top of the notebook, and execute the cells as instructed. Remember you can use `SHIFT + ENTER` to execute the currently selected cell, and if you do not have a cluster attached, you will be prompted to attach to the cluster you recently deployed. **Note that you will be directed to attach the `azureml-sdk[databricks]` library in the notebook using the same procedure you followed in Task 1.**
-    ![The Attach Library dialog showing PyPi as the source and azureml-sdk as the package.](images/Hands-onlabstep-bystep-CognitiveServicesanddeeplearningimages/media/azureml-sdk.png "Attach Library")
+    ![The Attach Library dialog showing PyPi as the source and azureml-sdk as the package.](images/Hands-onlabstep-bystep-CognitiveServicesanddeeplearningimages/media/azureml-sdk.PNG "Attach Library")
 
 
 ## Exercise 3: Create and Deploy a TensorFlow Model
