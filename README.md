@@ -70,16 +70,16 @@ Thanks for spending time with Microsoft today. We're ALWAYS thrilled to come and
 - GitHub: https://github.com/ChefGillani
 
 
-## Follow Up Links
+## Internships and Free Azure Links
 - [Azure Free $200 credit](https://azure.microsoft.com/en-us/offers/ms-azr-0044p/)
 - [Azure Internships and Programs](https://careers.microsoft.com/us/en/ur-lp-united-states)
 
-## Learning Links
+## [Learning Links](https://github.com/kfprugger/MLDay/blob/master/Training.md#training-links-for-azure)
 - [Azure Learning Paths](https://docs.microsoft.com/en-us/learn/browse/?products=azure%2Cvs-code)
 - [Microsoft Docs - Full Documenation and Tutorials for Each Azure Service](https://docs.microsoft.com/en-us/azure/#pivot=products&panel=all)
 - [Free Pluralsight Learning Provided by Microsoft](https://www.pluralsight.com/partners/microsoft/azure?aid=7010a000001xDURAA2)
 - [Cloud Architecture and API Overview in Azure](https://channel9.msdn.com/shows/Azure-Friday/Learning-Azure-Part-2-Architecture-and-interactive-APIs-for-NET-and-REST-APIs?ocid=AID754288&wt.mc_id=CFID0314)
 - [GitHub Quickstart Templates to Test Out New Tech!](https://github.com/Azure/azure-quickstart-templates)
-- [Azure Governance Links - For IT Admins in Azure]()
+- [Azure Governance Links - For IT Admins in Azure](https://www.linkedin.com/feed/update/urn:li:activity:6488065944924094464/)
 
-### [How to Price Azure?]{https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fazure.microsoft.com%2Fen-us%2Fpricing%2Fcalculator%2F&data=02%7C01%7CJoey.Brakefield%40microsoft.com%7Cc62af280039043454c7f08d67a3c8714%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636830797727888476&sdata=7t3jEmZiTYSsKtUfXQpYTXJEDlyqpynpLjjBK2WHb4g%3D&reserved=0}
+### [How to Price Azure?](https://azure.microsoft.com/en-us/pricing/calculator/?msclkid=f7ddc7cbfbb91f535bb19b8084682384&OCID=AID719825_SEM_YI7Ea97y&lnkd=Bing_Azure_Brand&dclid=CInq6rjwieACFdBgwQodZYYAxw)
