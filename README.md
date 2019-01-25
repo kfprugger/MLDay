@@ -66,3 +66,7 @@ Thanks for spending time with Microsoft today. We're ALWAYS thrilled to come and
 - LinkedIn: https://www.linkedin.com/in/chefgillani/
 - GitHub: https://github.com/ChefGillani
 
+
+## Follow Up Links
+- [Azure Free $200 credit](https://azure.microsoft.com/en-us/offers/ms-azr-0044p/)
+- [Azure Internships and Programs](https://careers.microsoft.com/us/en/ur-lp-united-states)
