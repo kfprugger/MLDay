@@ -8,6 +8,18 @@ These steps will get your started with a fresh start. If at all possible, please
 <img src="./media/OpenCloudShell.gif">
 
 ## **Tip: Copy and paste these blocks of code together inside the Azure Cloud Shell (see above graphic)**
+
+
+Since your permissions are so restrictive, you'll have to manually create the storage account before you can execute the BASH commands below
+
+When you click the Cloud shell click
+1. BASH
+2. When prompted to enter a storage account, click create then click advanced
+3. For Resource Group, select your Student<#> group
+4. For storage account name, type "cloudshellstu<#>"
+5. For file share name, type "cloudshellfilestu<#>"
+
+
 ```azurecli
 read -p "Enter Your Student Number: " stunum # This is your Resource Group Number listed at portal.azure.com --> Resource Groups link
 ```
