@@ -18,3 +18,6 @@
 - [Azure Resource Groups & Naming Conventions/Tagging Demo](https://www.linkedin.com/feed/update/urn:li:activity:6463443809954070528)
 - [Azure Policies & Management Groups](https://www.linkedin.com/feed/update/urn:li:activity:6463862618376540160/)
 - [Azure Governance Series Summary & Review](https://www.linkedin.com/feed/update/urn:li:activity:6488065944924094464/)
+
+## Azure Notebooks (FREE RESOURCE FOR JUPYTER NOTEBOOKS)
+- [Azure Notebooks](https://notebooks.azure.com)
