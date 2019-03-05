@@ -34,7 +34,7 @@ By the time you leave the workshop, you should know the following:
 
 - [Azure ML Studio Hands-On Lab](https://github.com/kfprugger/MLDay/blob/master/MLStudio/create-experiment.md#open-machine-learning-studio)
 
-### Session 4: HDInsight (Hadoop Made Easy) _We Diddn't get around to this session. Feel free to execute on your own!_
+### Session 4: HDInsight (Hadoop Made Easy) _We Didn't get around to this session. Feel free to execute on your own!_
 - **1230-1330:** Our third lab creates a HIVE table in Hadoop, one of the most prominent open-source big data & analytics engine, and demonstrates how to manipulate large amounts of data -- in this case weblogs -- and make sense of it with minimal effort
 
 - [HDInsight Hands-On Lab](https://github.com/kfprugger/MLDay/blob/master/Azure%20HDInsight/HiveLab/hands-on-lab.md)
